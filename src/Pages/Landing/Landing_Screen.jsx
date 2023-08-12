@@ -1,3 +1,5 @@
+import "./landing.css";
+
 export default function Landing_Screen({ setLogin, setCreateAccount }) {
     const handleLoginClick = () => {
         setLogin(true);
