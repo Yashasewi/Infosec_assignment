@@ -80,6 +80,7 @@
     /* left: 80%; */
     background-color: white;
     color: black;
+    display: none;
 }
 
 .signIn > h1 {
@@ -239,13 +240,67 @@
     width: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     /* align-items: center; */
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     top: 0%;
     position: absolute;
-    background-color: red;
-    left: 80%;
+    background-color: white;
+    color: black;
+    /* left: 80%; */
+}
+
+.profile > h1 {
+    padding: 1.3rem;
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: left;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    /* border-bottom: 1px solid #6c25ff; */
+}
+
+.profile__details {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+    background-color: #d9dbdd75;
+}
+
+.profile__details > img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userData {
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.userData > h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.userData > h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.profile > p {
+    padding: 0 1.8rem;
+    width: 100%;
+    font-size: 1rem;
+    text-align: justify;
+    padding-bottom: 3rem;
+    background-color: #d9dbdd75;
+    border-bottom: 2px dashed #93939381;
+}
+
+.dashed {
+    position: relative;
+    top: 40%;
+    border-bottom: 2px dashed #93939381;
 }
 
 /* login */
