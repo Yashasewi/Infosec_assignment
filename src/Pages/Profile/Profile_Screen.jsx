@@ -1,3 +1,4 @@
+import "./profile.css";
 export default function Profile_Screen() {
     return (
         <div className="profile">

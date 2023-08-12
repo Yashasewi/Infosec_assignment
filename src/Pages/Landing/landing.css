@@ -1,0 +1,52 @@
+.landing_screen {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: center; */
+    padding: 1.5rem;
+    gap: 1rem;
+    background-color: white;
+    color: black;
+    /* display: none; */
+}
+
+.landing_screen > h1 {
+    color: white;
+    width: 100%;
+    font-size: 2.4rem;
+    text-align: left;
+    color: black;
+}
+
+.landing_screen > p {
+    color: black;
+    max-width: 300px;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.landing_screen > button {
+    align-self: center;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.create_account {
+    background-color: #6c25ff;
+    color: white;
+}
+
+.login_account {
+    color: black;
+    background-color: #cebafb;
+}
