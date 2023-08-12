@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./signIn.css";
 export default function SignIn_Screen() {
     return (
@@ -5,10 +6,11 @@ export default function SignIn_Screen() {
             <h1>Create your</h1>
             <h1>PopX Account</h1>
 
-            {/* create a form with full name , phone number 
-            , email addrees  , password , company name and 
-            radio button of agency yes and no */}
-            <form>
+            <form
+                onSubmit={(e) => {
+                    e.preventDefault();
+                }}
+            >
                 <span>
                     <label className="fullName">Full Name</label>
                     <input type="text" placeholder="Full Name" />
@@ -45,7 +47,9 @@ export default function SignIn_Screen() {
                     </span>
                 </span>
 
-                <button>Create Account</button>
+                <button>
+                    <Link to="/profile">Create Account</Link>
+                </button>
             </form>
         </div>
     );

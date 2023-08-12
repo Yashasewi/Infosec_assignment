@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./login.css";
 
 export default function Login_Screen() {
@@ -9,16 +10,31 @@ export default function Login_Screen() {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 aliquam. Culpa minima
             </p>
-            <form>
+            <form
+                className="Login_form"
+                onSubmit={(e) => {
+                    e.preventDefault();
+                }}
+            >
                 <span>
                     <label className="email">Email Address</label>
-                    <input type="email" placeholder="Email Address" />
+                    <input
+                        className="input_element"
+                        type="email"
+                        placeholder="Email Address"
+                    />
                 </span>
                 <span>
                     <label className="password">Password</label>
-                    <input type="password" placeholder="Password" />
+                    <input
+                        className="input_element"
+                        type="password"
+                        placeholder="Password"
+                    />
                 </span>
-                <button>Login</button>
+                <button>
+                    <Link to="/profile">Login</Link>
+                </button>
             </form>
         </div>
     );
